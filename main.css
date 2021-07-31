@@ -1,0 +1,374 @@
+@font-face {
+    font-family: "normal";
+    src: url("./assets/fonts/Ubuntu-Regular.ttf")
+}
+
+@font-face {
+    font-family: "dancing";
+    src: url("./assets/fonts/DancingScript-Regular.ttf")
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    padding: 100px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px 10px grey;
+}
+
+.main {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 8vh;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    transition: 0.5s;
+    box-sizing: border-box;
+    padding: 100px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+header.main .logo {
+    font-size: 6.5rem;
+}
+
+header.sticky .logo {
+    font-size: 5rem;
+}
+
+header.sticky {
+    background: white;
+    padding: 50px 30px;
+    opacity: 0.8;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.014);
+}
+
+header.sticky:hover {
+    opacity: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1.5);
+}
+
+.menutoggle {
+    position: relative;
+    cursor: pointer;
+    display: none
+}
+
+
+
+.logo {
+    position: relative;
+    font-size: 5rem;
+    color: rgb(14, 238, 144);
+    font-family: dancing;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-size: 2.3rem;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    font-family: normal;
+    padding: 2px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.navigation li a:active {
+    color: rgb(0, 199, 0);
+    text-shadow: 0px 1px 5px lightgreen;
+    box-shadow: 0px 0px 5px 1px black, 0px 0px 2px 1px darkgreen inset;
+}
+
+.navigation li a:hover {
+    color: rgb(0, 199, 0);
+    text-shadow: 0px 1px 5px lightgreen;
+    box-shadow: 0px 0px 5px 1px black, 0px 0px 2px 1px darkgreen inset;
+}
+
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background: url("./assets/images/wp2752752-buildings-wallpapers.jpg");
+}
+
+.banner .bannercontent {
+    max-width: 90vw;
+    text-align: center;
+}
+
+.banner-content {
+    font-size: 10vw;
+    font-family: dancing;
+    color: rgb(14, 14, 14);
+}
+
+.content-p {
+    font-size: 2rem;
+    color: white;
+    font-family: normal;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url("./assets/images/wp2752761-buildings-wallpapers.jpg")
+}
+
+.content .content-box {
+    height: fit-content;
+    min-height: 250px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    opacity: 0.8;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title-content {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    position: relative;
+    width: 100%;
+    font-family: normal;
+
+}
+
+.content-box:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 30px 5px rgb(0, 0, 0);
+}
+
+.content .content-box h2 {
+    font-size: 3rem;
+    font-family: normal;
+    font-weight: 100;
+}
+
+.contact {
+    transition: 0.5s;
+    display: block;
+    background: url("./assets/images/wp2752757-buildings-wallpapers.jpg");
+    background-size: cover;
+    object-fit: cover;
+    font-family: normal;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.title h2 {
+    font-family: dancing;
+}
+
+.formcontact {
+    padding: 80px 50px;
+}
+
+.h3 {
+    color: rgb(29, 29, 29);
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.inputform {
+    margin: 20px;
+}
+
+.h3 {
+    font-size: 3rem;
+}
+
+.inputform input {
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    height: 45px;
+    width: 380px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.3rem;
+}
+
+.inputform input:hover {
+    box-shadow: 0 0 5px 1px black;
+}
+
+.inputform input:focus {
+    box-shadow: 0 0 5px 5px #57c95d;
+}
+
+textarea:hover {
+    box-shadow: 0 0 5px 1px black;
+}
+
+textarea:focus {
+    box-shadow: 0 0 5px 5px #57c95d;
+}
+
+.inputform textarea {
+    height: 200px;
+    width: 380px;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    padding: 10px 10px
+}
+
+.inputform input[type="submit"] {
+    width: 200px;
+    background-color: #57c95d;
+    color: #fff;
+}
+
+.inputform input[type="submit"]:hover {
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px black;
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 100px 10px;
+        margin-top: 10px;
+        box-shadow: 0px 0px 10px 10px grey;
+    }
+
+    .main {
+        padding: 50px 20px;
+    }
+
+    .banner-content {
+        font-size: 20vw;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .menutoggle {
+        display: flex;
+    }
+
+    .contact {
+        background-position-x: -400px;
+    }
+
+    .formcontact {
+        padding: 10px 20px;
+    }
+
+    .content .content-box {
+        min-width: 80vw;
+    }
+
+    .inputform input {
+        height: 45px;
+        max-width: 70vw;
+        margin-left: -30px;
+    }
+
+    textarea {
+        max-width: 70vw;
+        margin-left: -30px
+    }
+
+    .title {
+        font-size: 8vw;
+    }
+
+    span {
+        font-size: 5vw;
+    }
+
+    header .navigation.active {
+        width: 100%;
+        height: 8%;
+        position: fixed;
+        top: 120px;
+        left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: row wrap;
+  
+    }
+
+    .navigation.active li a {
+        box-sizing: content-box;
+        text-decoration: none;
+        font-size: 2.3rem;
+        margin: 10px;
+        color: rgb(255, 255, 255);
+        font-family: normal;
+        line-height: 40px;
+        padding: 2px 10px;
+        border-radius: 5px;
+        transition: 0.5s;
+        box-shadow: 0px 0px 10px 50px rgb(0, 199, 0) inset;
+    }
+   
+}
